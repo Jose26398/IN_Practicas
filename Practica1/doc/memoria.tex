@@ -132,14 +132,127 @@ siguientes atributos proporcionados en el dataset:
 \end{itemize}
 
 En el dataset hay datos de 961 pacientes, sin embargo, nos gustaría dejar un porcentaje para validar el modelo y así ver cómo va
-entrenando los datos.
+entrenando los datos. Posteriormente, se explicará cómo se ha determinado qué datos son los de entrenamiento y cuáles son los de
+test.
 
-
+\newpage
 
 \section{Procesado de datos}
 
+Lo primero que tenemos que hacer es mostrar varios de los datos que tenemos y analizarlos. En mi caso vamos a sacar las 5 primeras
+filas:
+
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{} & \textbf{BI-RADS} & \textbf{Age} & \textbf{Shape} & \textbf{Margin} & \textbf{Density} & \textbf{Severity} \\ \hline
+    \textbf{0} & 5.0 & 67.0 & L & 5.0 & 3.0 & maligno \\ \hline
+    \textbf{1} & 4.0 & 43.0 & R & 1.0 & NaN & maligno \\ \hline
+    \textbf{2} & 5.0 & 58.0 & I & 5.0 & 3.0 & maligno \\ \hline
+    \textbf{3} & 4.0 & 28.0 & R & 1.0 & 3.0 & benigno \\ \hline
+    \textbf{4} & 5.0 & 74.0 & R & 5.0 & NaN & maligno \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+Podemos observar que tenemos tanto datos numéricos, como datos categóricos, como ya comentamos en la introducción. También podemos
+observar que tenemos varias celdas con datos erróneos o perdidos (representados con el valor $NaN$), por lo que será importante
+procesarlos para que nuestros algoritmos funcionen correctamente. Primero veamos qué cantidad de estos datos nulos tenemos:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+    \multicolumn{1}{|c|}{\textbf{BI-RADS}} & 2 \\ \hline
+    \textbf{Age} & 5 \\ \hline
+    \textbf{Shape} & 0 \\ \hline
+    \textbf{Margin} & 48 \\ \hline
+    \textbf{Density} & 76 \\ \hline
+    \textbf{Severity} & 0 \\ \hline
+    \end{tabular}
+\end{table}
+
+Son una cantidad bastante alta de datos, en comparación con la cantidad de datos totales que tenemos. Por lo tanto, eliminar toda
+las filas que contengan uno, puede dejarnos con muy pocos datos para entrenar y validar, y que el modelo sea más débil. No obstante,
+el introducir datos para reemplazar uno faltante ha de realizarse con cuidado, ya que no son datos reales.
+
+También tenemos que tener en cuenta cuál es la distribución de estos datos antes de trabajar con ellos. Es decir, tenemos que
+asegurarnos de no sesgar nuestros datos si los eliminamos. Si hay algún tipo de correlación, tendríamos que intentar completarlos
+de alguna forma. Para ello, vamos a generar una gráfica para cada uno de los atributos del $dataset$, en la que mostraremos la
+cantidad de datos antes y después de eliminarlos, y asi ver cómo están distribuidos.
+
+\newpage
+Los resultados son los siguientes:
+
+\begin{figure}[H]
+\centering
+
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[scale=0.35]{img/birads-distribution.png}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[scale=0.35]{img/age-distribution.png}
+\end{minipage}
+
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[scale=0.35]{img/shape-distribution.png}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[scale=0.35]{img/margin-distribution.png}
+\end{minipage}
+
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[scale=0.35]{img/density-distribution.png}
+\end{minipage}%
+\begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[scale=0.35]{img/severity-distribution.png}
+\end{minipage}
+
+\end{figure}
+
+Podemos observar que los datos nulos están distribuidos aleatoriamente entre los atributos, por lo que podremos eliminarlos
+del $dataset$ sin ningún problema (y teniendo en cuenta que tendremos menos datos para trabajar).
+
+% PROBAR REEMPLAZANDO LOS DATOS CON ALEATORIOS
+% \textit{Pandas} nos proporciona la función ''\textit{fillna()}'' para reemplazar los valores faltantes con un valor específico
+
+
 
 \section{Configuración de algoritmos}
+
+\subsection{K-Nearest-Neighbors (k-NN)}
+
+
+\subsection{Decision Tree}
+
+
+\subsection{Naive-Bayes}
+
+
+\subsection{Neural Network}
+
+
+\subsection{Support Vector Machine (SVM)}
 
 
 \section{Resultados obtenidos}

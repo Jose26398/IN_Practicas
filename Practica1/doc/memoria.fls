@@ -1,7 +1,7 @@
-PWD c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc
+PWD c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.tex
-OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.log
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.tex
+OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.log
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo
@@ -92,9 +92,9 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.aux
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.aux
-OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.aux
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.aux
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.aux
+OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.aux
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty
@@ -105,19 +105,19 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.pdf
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\ugr.png
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\ugr.png
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\ugr.png
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\ugr.png
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\ugr.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.pdf
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\ugr.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\ugr.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\ugr.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\ugr.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\ugr.png
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1095.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc1440.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\eccc2488.tfm
@@ -133,21 +133,55 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1095.tfm
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\etsiit.jpeg
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\etsiit.jpeg
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\etsiit.jpeg
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\etsiit.jpeg
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\img\etsiit.jpeg
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\etsiit.jpeg
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\etsiit.jpeg
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\etsiit.jpeg
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\etsiit.jpeg
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\etsiit.jpeg
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1440.tfm
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.toc
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.toc
-OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.toc
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.toc
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.toc
+OUTPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.toc
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecti1095.tfm
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.aux
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
-INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\birads-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\birads-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\birads-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\birads-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\birads-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\age-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\age-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\age-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\age-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\age-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\shape-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\shape-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\shape-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\shape-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\shape-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\margin-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\margin-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\margin-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\margin-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\margin-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\density-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\density-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\density-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\density-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\density-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\severity-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\severity-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\severity-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\severity-distribution.png
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\img\severity-distribution.png
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecrm1200.tfm
+INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\jknappen\ec\ecbx1200.tfm
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.aux
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT c:\Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.out
+INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
@@ -162,3 +196,5 @@ INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1095.pk
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
 INPUT C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi10.pfb

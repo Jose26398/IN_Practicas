@@ -1,7 +1,12 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}% 
-\contentsline {section}{\numberline {2}Procesado de datos}{2}{section.2}% 
-\contentsline {section}{\numberline {3}Configuraci\IeC {\'o}n de algoritmos}{2}{section.3}% 
-\contentsline {section}{\numberline {4}Resultados obtenidos}{2}{section.4}% 
-\contentsline {section}{\numberline {5}Interpretaci\IeC {\'o}n de resultados}{2}{section.5}% 
-\contentsline {section}{\numberline {6}Bibliograf\IeC {\'\i }a}{2}{section.6}% 
+\contentsline {section}{\numberline {2}Procesado de datos}{3}{section.2}% 
+\contentsline {section}{\numberline {3}Configuraci\IeC {\'o}n de algoritmos}{5}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}K-Nearest-Neighbors (k-NN)}{5}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Decision Tree}{5}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Naive-Bayes}{5}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Neural Network}{5}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Support Vector Machine (SVM)}{5}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}Resultados obtenidos}{5}{section.4}% 
+\contentsline {section}{\numberline {5}Interpretaci\IeC {\'o}n de resultados}{5}{section.5}% 
+\contentsline {section}{\numberline {6}Bibliograf\IeC {\'\i }a}{5}{section.6}% 

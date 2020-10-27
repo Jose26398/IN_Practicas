@@ -1,6 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introducci\363n}{}% 1
 \BOOKMARK [1][-]{section.2}{Procesado de datos}{}% 2
 \BOOKMARK [1][-]{section.3}{Configuraci\363n de algoritmos}{}% 3
-\BOOKMARK [1][-]{section.4}{Resultados obtenidos}{}% 4
-\BOOKMARK [1][-]{section.5}{Interpretaci\363n de resultados}{}% 5
-\BOOKMARK [1][-]{section.6}{Bibliograf\355a}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{K-Nearest-Neighbors \(k-NN\)}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Decision Tree}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Naive-Bayes}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Neural Network}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Support Vector Machine \(SVM\)}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Resultados obtenidos}{}% 9
+\BOOKMARK [1][-]{section.5}{Interpretaci\363n de resultados}{}% 10
+\BOOKMARK [1][-]{section.6}{Bibliograf\355a}{}% 11

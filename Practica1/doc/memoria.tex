@@ -239,26 +239,70 @@ del $dataset$ sin ningún problema (y teniendo en cuenta que tendremos menos dat
 
 
 \section{Configuración de algoritmos}
+Para todos los algoritmos hemos procedido de la misma manera, y así evaluarlos a todos en igualdad de condiciones. Para
+comenzar, declaramos el clasificador con sus parámetros correspondientes (en nuestro caso, las primeras evaluaciones han sido
+con los parámetros por defecto y una semilla $random\_state=0$).
+
+Posteriormente, hacemos las predicciones correspondientes para los datos de entrenamiento. Lo hacemos mediante validación
+cruzada de 5 particiones, gracias a la función:
+$$cross\_val\_predict(classifier, x\_train, y\_train, cv=5)$$
+
+Por último, para evaluar los resultados obtenidos vamos a usar:
+\begin{itemize}
+    \item \textbf{Classification report.} Crea un informe que muestra las principales métricas de clasificación: precisión,
+          recall, f1-score, y promedios macro, ponderado y de la muestra.
+    \item \textbf{Score.} Misma medida del informe anterior mostrada con un poco más de precisión.
+    \item \textbf{AUC Score.} Métrica que calcula el área bajo la curva ROC generada a partir de las predicciones.
+    \item \textbf{Confusion matrix.} Muestra una matriz para evaluar la precisión de la clasificación. Cada fila representa las
+          instancias de una clase predicha, mientras que cada columna representa las instancias reales de ésta.
+\end{itemize}
+
+Los algoritmos que evaluaremos han sido elegidos porque, cada uno de ellos, tiene una forma de procesar los datos diferente a
+todos los demás. Estos algoritmos son los siguientes:
 
 \subsection{K-Nearest-Neighbors (k-NN)}
+Comenzamos por este algoritmo ya que es uno de los más utilizados, debido a su simplicidad. Este algoritmo funciona de la
+siguiente manera. Cuando tenemos un nuevo ejemplo a clasificar, calcula la distancia (Euclídea) con respecto a los datos ya
+existentes, y considerando los $k$ más cercanos, determina si pertenece a una clase u otra.
+
+\newpage
+A la hora de implementarlo lo hacemos de la siguiente forma:
+$$KnnClf = KNeighborsClassifier(n\_neighbors=5)$$
+
+Seleccionamos un número \textbf{k=5} de vecinos a evaluar y dejamos el resto de parámetros que trae el algoritmo por defecto.
+El parámetro anterior es el más relevante, sin embargo, algunos otros interesantes a estudiar pueden ser, por ejemplo:
+\textbf{p}, que sirve para cambiar el tipo de distancia utilizada (Euclídea, Manhattan o Minkowski); ó \textbf{weights}, que
+determina la influencia de los vecinos en la predicción (todos ponderan igual, los cercanos influyen más o tu propia función).
+
+
+\subsection*{Resultados obtenidos}
+Hola buenas tardes
 
 
 \subsection{Decision Tree}
 
+\subsection*{Resultados obtenidos}
+
 
 \subsection{Naive-Bayes}
+
+\subsection*{Resultados obtenidos}
 
 
 \subsection{Neural Network}
 
+\subsection*{Resultados obtenidos}
+
 
 \subsection{Support Vector Machine (SVM)}
 
+\subsection*{Resultados obtenidos}
 
-\section{Resultados obtenidos}
+
+\section{Interpretación de los resultados}
 
 
-\section{Interpretación de resultados}
+\section{Conclusión}
 
 
 \section{Bibliografía}

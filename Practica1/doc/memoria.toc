@@ -3,10 +3,12 @@
 \contentsline {section}{\numberline {2}Procesado de datos}{3}{section.2}% 
 \contentsline {section}{\numberline {3}Configuraci\IeC {\'o}n de algoritmos}{5}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}K-Nearest-Neighbors (k-NN)}{5}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Decision Tree}{6}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}Naive-Bayes}{6}{subsection.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Neural Network}{6}{subsection.3.4}% 
-\contentsline {subsection}{\numberline {3.5}Support Vector Machine (SVM)}{6}{subsection.3.5}% 
-\contentsline {section}{\numberline {4}Interpretaci\IeC {\'o}n de los resultados}{6}{section.4}% 
-\contentsline {section}{\numberline {5}Conclusi\IeC {\'o}n}{6}{section.5}% 
-\contentsline {section}{\numberline {6}Bibliograf\IeC {\'\i }a}{6}{section.6}% 
+\contentsline {subsection}{\numberline {3.2}Decision Tree}{7}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Naive-Bayes}{7}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}Neural Network}{8}{subsection.3.4}% 
+\contentsline {subsection}{\numberline {3.5}Support Vector Machine (SVM)}{9}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}An\IeC {\'a}lisis de los resultados}{9}{section.4}% 
+\contentsline {section}{\numberline {5}Interpretaci\IeC {\'o}n de los resultados}{10}{section.5}% 
+\contentsline {section}{\numberline {6}}{10}{section.6}% 
+\contentsline {section}{\numberline {7}Conclusi\IeC {\'o}n}{10}{section.7}% 
+\contentsline {section}{\numberline {8}Bibliograf\IeC {\'\i }a}{10}{section.8}% 

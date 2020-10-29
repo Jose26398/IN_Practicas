@@ -230,8 +230,8 @@ Los resultados son los siguientes:
 
 \end{figure}
 
-Podemos observar que los datos nulos están distribuidos aleatoriamente entre los atributos, por lo que podremos eliminarlos
-del $dataset$ sin ningún problema (y teniendo en cuenta que tendremos menos datos para trabajar).
+Podemos observar que los datos nulos están distribuidos aleatoriamente entre los atributos, por lo que podremos eliminarlos del
+$dataset$ sin ningún problema (y teniendo en cuenta que tendremos menos datos para trabajar).
 
 % PROBAR REEMPLAZANDO LOS DATOS CON ALEATORIOS
 % \textit{Pandas} nos proporciona la función ''\textit{fillna()}'' para reemplazar los valores faltantes con un valor específico
@@ -239,67 +239,171 @@ del $dataset$ sin ningún problema (y teniendo en cuenta que tendremos menos dat
 
 
 \section{Configuración de algoritmos}
-Para todos los algoritmos hemos procedido de la misma manera, y así evaluarlos a todos en igualdad de condiciones. Para
-comenzar, declaramos el clasificador con sus parámetros correspondientes (en nuestro caso, las primeras evaluaciones han sido
-con los parámetros por defecto y una semilla $random\_state=0$).
+Para todos los algoritmos hemos procedido de la misma manera, y así evaluarlos a todos en igualdad de condiciones. Para comenzar,
+declaramos el clasificador con sus parámetros correspondientes (en nuestro caso, las primeras evaluaciones han sido con los
+parámetros por defecto y una semilla $random\_state=0$).
 
-Posteriormente, hacemos las predicciones correspondientes para los datos de entrenamiento. Lo hacemos mediante validación
-cruzada de 5 particiones, gracias a la función:
+Posteriormente, hacemos las predicciones correspondientes para los datos de entrenamiento. Lo hacemos mediante validación cruzada
+de 5 particiones, gracias a la función:
 $$cross\_val\_predict(classifier, x\_train, y\_train, cv=5)$$
 
 Por último, para evaluar los resultados obtenidos vamos a usar:
 \begin{itemize}
-    \item \textbf{Classification report.} Crea un informe que muestra las principales métricas de clasificación: precisión,
-          recall, f1-score, y promedios macro, ponderado y de la muestra.
+    \item \textbf{Classification report.} Crea un informe que muestra las principales métricas de clasificación: precisión, recall,
+          f1-score, y promedios macro, ponderado y de la muestra.
     \item \textbf{Score.} Misma medida del informe anterior mostrada con un poco más de precisión.
     \item \textbf{AUC Score.} Métrica que calcula el área bajo la curva ROC generada a partir de las predicciones.
     \item \textbf{Confusion matrix.} Muestra una matriz para evaluar la precisión de la clasificación. Cada fila representa las
           instancias de una clase predicha, mientras que cada columna representa las instancias reales de ésta.
 \end{itemize}
 
-Los algoritmos que evaluaremos han sido elegidos porque, cada uno de ellos, tiene una forma de procesar los datos diferente a
-todos los demás. Estos algoritmos son los siguientes:
+Los algoritmos que evaluaremos han sido elegidos porque, cada uno de ellos, tiene una forma de procesar los datos diferente a todos
+los demás. Estos algoritmos son los siguientes:
 
 \subsection{K-Nearest-Neighbors (k-NN)}
-Comenzamos por este algoritmo ya que es uno de los más utilizados, debido a su simplicidad. Este algoritmo funciona de la
-siguiente manera. Cuando tenemos un nuevo ejemplo a clasificar, calcula la distancia (Euclídea) con respecto a los datos ya
-existentes, y considerando los $k$ más cercanos, determina si pertenece a una clase u otra.
+Comenzamos por este algoritmo ya que es uno de los más utilizados, debido a su simplicidad. Este algoritmo funciona de la siguiente
+manera. Cuando tenemos un nuevo ejemplo a clasificar, calcula la distancia (Euclídea) con respecto a los datos ya existentes, y
+considerando los $k$ más cercanos, determina si pertenece a una clase u otra.
 
 \newpage
 A la hora de implementarlo lo hacemos de la siguiente forma:
 $$KnnClf = KNeighborsClassifier(n\_neighbors=5)$$
 
-Seleccionamos un número \textbf{k=5} de vecinos a evaluar y dejamos el resto de parámetros que trae el algoritmo por defecto.
-El parámetro anterior es el más relevante, sin embargo, algunos otros interesantes a estudiar pueden ser, por ejemplo:
-\textbf{p}, que sirve para cambiar el tipo de distancia utilizada (Euclídea, Manhattan o Minkowski); ó \textbf{weights}, que
-determina la influencia de los vecinos en la predicción (todos ponderan igual, los cercanos influyen más o tu propia función).
-
+Seleccionamos un número \textbf{k=5} de vecinos a evaluar y dejamos el resto de parámetros que trae el algoritmo por defecto. El
+parámetro anterior es el más relevante, sin embargo, algunos otros interesantes a estudiar pueden ser, por ejemplo: \textbf{p},
+que sirve para cambiar el tipo de distancia utilizada (Euclídea, Manhattan o Minkowski); ó \textbf{weights}, que determina la
+influencia de los vecinos en la predicción (todos ponderan igual, los cercanos influyen más o tu propia función).
 
 \subsection*{Resultados obtenidos}
-Hola buenas tardes
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.80 & 0.82 & 0.81 & 347 \\
+        \textbf{1} & 0.81 & 0.78 & 0.79 & 330 \\ \hline
+        \textbf{accuracy} &  &  & 0.80 & 677 \\
+        \textbf{macro avg} & 0.80 & 0.80 & 0.80 & 677 \\
+        \textbf{weighted avg} & 0.80 & 0.80 & 0.80 & 677
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{img/matrix-knn.png}    
+\end{figure}
+$$\textbf{SCORE:  } 0.7991137370753324$$
+$$\textbf{AUC score:  } 0.7986900707361801$$
 
 
 \subsection{Decision Tree}
 
 \subsection*{Resultados obtenidos}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.75 & 0.82 & 0.78 & 347 \\
+        \textbf{1} & 0.79 & 0.72 & 0.75 & 330 \\ \hline
+        \textbf{accuracy} & 0.77 & 677 & 0.80 & 677 \\
+        \textbf{macro avg} & 0.77 & 0.77 & 0.77 & 677 \\
+        \textbf{weighted avg} & 0.77 & 0.77 & 0.77 & 677
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{img/matrix-tree.png}    
+\end{figure}
+$$\textbf{SCORE:  } 0.7666174298375185$$
+$$\textbf{AUC score:  } 0.7653567374028469$$
 
 
 \subsection{Naive-Bayes}
 
 \subsection*{Resultados obtenidos}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.85 & 0.78 & 0.81 & 347 \\
+        \textbf{1} & 0.79 & 0.85 & 0.82 & 330 \\ \hline
+        \textbf{accuracy} & 0.82 & 677 & 0.80 & 677 \\
+        \textbf{macro avg} & 0.82 & 0.82 & 0.82 & 677 \\
+        \textbf{weighted avg} & 0.82 & 0.82 & 0.82 & 677
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{img/matrix-naivebayes.png}    
+\end{figure}
+$$\textbf{SCORE:  } 0.8153618906942393$$
+$$\textbf{AUC score:  } 0.8162474893022443$$
 
 
 \subsection{Neural Network}
 
 \subsection*{Resultados obtenidos}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.82 & 0.87 & 0.85 & 347 \\
+        \textbf{1} & 0.86 & 0.80 & 0.83 & 330 \\ \hline
+        \textbf{accuracy} & 0.84 & 677 & 0.80 & 677 \\
+        \textbf{macro avg} & 0.84 & 0.84 & 0.84 & 677 \\
+        \textbf{weighted avg} & 0.84 & 0.84 & 0.84 & 677
+    \end{tabular}
+\end{table}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{img/matrix-neuralnetwork.png}    
+\end{figure}
+$$\textbf{SCORE:  } 0.8360413589364845$$
+$$\textbf{AUC score:  } 0.8350842721159724$$
 
 \subsection{Support Vector Machine (SVM)}
 
 \subsection*{Resultados obtenidos}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.81 & 0.88 & 0.84 & 347 \\
+        \textbf{1} & 0.86 & 0.78 & 0.82 & 330 \\ \hline
+        \textbf{accuracy} & 0.83 & 677 & 0.80 & 677 \\
+        \textbf{macro avg} & 0.83 & 0.83 & 0.83 & 677 \\
+        \textbf{weighted avg} & 0.83 & 0.83 & 0.83 & 677
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{img/matrix-neuralnetwork.png}    
+\end{figure}
+$$\textbf{SCORE:  } 0.8301329394387001$$
+$$\textbf{AUC score:  } 0.8289494367304165$$
+
+\section{Análisis de los resultados}
+Podemos observar que tenemos aproximadamente un 80\% de precisión, es decir, el modelo ha acertado un 80\% de los casos que se le
+ha propuesto. No 
 
 
 \section{Interpretación de los resultados}
+
+
+\section{}
 
 
 \section{Conclusión}

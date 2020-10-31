@@ -260,6 +260,7 @@ Por último, para evaluar los resultados obtenidos vamos a usar:
 Los algoritmos que evaluaremos han sido elegidos porque, cada uno de ellos, tiene una forma de procesar los datos diferente a todos
 los demás. Estos algoritmos son los siguientes:
 
+
 \subsection{K-Nearest-Neighbors (k-NN)}
 Comenzamos por este algoritmo ya que es uno de los más utilizados, debido a su simplicidad. Este algoritmo funciona de la siguiente
 manera. Cuando tenemos un nuevo ejemplo a clasificar, calcula la distancia (Euclídea) con respecto a los datos ya existentes, y
@@ -298,6 +299,21 @@ $$\textbf{AUC score:  } 0.7986900707361801$$
 
 
 \subsection{Decision Tree}
+Este clasificador, como su propio nombre indica, es un árbol en el que cada \textbf{hoja} es una clase y cada \textbf{nodo} es
+un nodo de decisión con una prueba simple a realizar.
+
+El algoritmo funciona de la siguiente forma. Todos los ejemplos de entrenamiento comienzan desde el nodo raíz y se dividen
+recursivamente los ejemplos en base a los atributos seleccionados. Esta selección de atributos se suele realizar mediante el
+criterio ''\textit{gini}'', pero también hay otros como ''\textit{InfoGain}'' o ''\textit{GainRatio}''. Posteriormente,
+quitamos las ramas con ruido o con datos anómalos.
+
+A la hora de implementarlo lo hacemos de la siguiente forma:
+$$DecTreeClf = tree.DecisionTreeClassifier(random_state=0)$$
+
+El parámetro \textbf{random\_state} nos sirve para seleccionar la semilla. El resto de parámetros los dejamos por defecto, ya
+que la mayoría son utilizados para limitar el número de hojas, el número de características, etc. que en nuestro ejemplo no
+necesitaremos. También tenemos el parámetro \textbf{criterion}, que nos sirve para elegir el criterio de selección de atributos
+comentado anteriormente.
 
 \subsection*{Resultados obtenidos}
 % Please add the following required packages to your document preamble:
@@ -323,6 +339,18 @@ $$\textbf{AUC score:  } 0.7653567374028469$$
 
 
 \subsection{Naive-Bayes}
+Se ha utilizado porque es el modelo de red bayesiana orientada a clasificación más simple. Este algoritmo se considera un
+estándar y sus resultados son competitivos, pese a utilizar una hipótesis poco realista. Es decir, suponemos que todos los
+atributos son independientes a partir de su clase, asi que la hipótesis MAP (Máximo a posteriori) en un Naive-Bayes queda así:
+$$C_{MAP} = \arg _{c\epsilon \Omega_C}maxP(c|a_1,...,a_n) = \arg _{c\epsilon \Omega_C}maxP(c)\prod_{i=1}^{n}P(a_i|c)$$
+
+En la práctica, existen dependencias entre variables, por lo que puede llevar a una falta de precisión que no se puede retocar
+en un clasificador como este (existen redes de creencia bayesianas para solucionar esto).
+
+A la hora de implementarlo lo hacemos de la siguiente forma:
+$$GaussianClf = GaussianNB()$$
+
+No ponemos ningún parámetro ya que es un clasificador que no se puede modelar o retocar, como acabamos de decir.
 
 \subsection*{Resultados obtenidos}
 % Please add the following required packages to your document preamble:
@@ -348,6 +376,37 @@ $$\textbf{AUC score:  } 0.8162474893022443$$
 
 
 \subsection{Neural Network}
+Estos algoritmos están basados en los propios sistemas nerviosos biológicos:
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.35]{img/neural-network.png}    
+\end{figure}
+
+Como podemos ver en la figura, cada señal que llega a las dendritas \{$x_1,x_2,...,x_n$\} serían nuestros datos de entrada
+del modelo. Las sinapsis o puntos de conexión con otra neurona, serían los pesos \{$w_1,w_2,...,w_n$\} que ponderan a las
+entradas: \textbf{positivo} es una sinapsis excitadora y \textbf{negativo} es una sinapsis inhibidora.
+
+Después, la actividad interna de cada célula sería la sumatoria entre cada una de las conexiones anteriores, y por último, la
+\textbf{función de activación} que, dadas estas entradas, define una salida para el modelo:
+$$y_j = f(Net_j - \theta_j) = f(\sum w_{ji} \cdot x_i - \theta)$$
+
+Para este trabajo, no vamos a implementar una red neuronal desde cero, ya que es una tarea bastante compleja. Sin embargo,
+vamos a utilizar un \textbf{MultiLayer Perceptron (MLP)}, que es una red neuronal compuesta por: una capa de entrada, capas
+ocultas (o \textit{hidden layers}) y una capa de salida. Excepto los datos de entrada, cada nodo es una neurona que utiliza
+una función de activación no lineal (sigmoidal es la más común), y en el entrenamiento utiliza la técnica de \textit{backtracking}
+
+A la hora de implementarlo lo haremos de la siguiente forma:
+$$PerceptronClf = MLPClassifier(hidden\_layer\_sizes=100, random\_state=0)$$
+
+Aquí podemos ver la cantidad de capas ocultas que queremos que tenga nuestra red. Es el parámetro más importante, ya que
+cuanto más alto sea, más aprenderá de los datos que tenemos. Esto no quiere decir que tengamos que poner un valor muy alto,
+ya que puede causar sobreaprendizaje en nuestro modelo. El otro parámetro que aparece, al igual que en los otros clasificadores,
+nos sirve para seleccionar la semilla.
+
+También existen otros parámetros importantes, como pueden ser: \textbf{activation}, con la que podemos seleccionar la función
+de activación a utilizar; \textbf{early\_stopping}, que sirve para finalizar el entrenamiento si no se mejora durante un número
+X de iteraciones; o parámetros relacionados con los pesos como \textbf{solver} (para la optimización de los pesos), \textbf{
+learning\_rate} (tasa de aprendizaje) ó \textbf{tol} (tolerancia).
 
 \subsection*{Resultados obtenidos}
 % Please add the following required packages to your document preamble:
@@ -372,6 +431,18 @@ $$\textbf{SCORE:  } 0.8360413589364845$$
 $$\textbf{AUC score:  } 0.8350842721159724$$
 
 \subsection{Support Vector Machine (SVM)}
+El último algoritmo que vamos a utilizar es uno de los más populares en cuanto a la clasificación binaria. Una SVM construye
+un hiperplano entre las dos clases de forma que la separación entre ellas se amplie al máximo. Se van transformando los datos
+de entrada en un espacio de caracteristicas mediante el \textbf{producto interno (escalar)}.
+
+A la hora de implementarlo lo haremos de la siguiente forma:
+$$SvmClf = SVC(random_state=0, gamma='auto')$$
+
+El primer parámetro que tenemos aquí es la semilla, al igual que en los otros. El siguiente parámetro es para seleccionar
+el coeficiente del \textbf{kernel} (el cual también es otro parámetro que también se podrá modificar).
+
+También tenemos otros parámetros como son la \textbf{C}, para la regularazación; \textbf{tol} o tolerancia, como en las redes
+neuronales; o hasta un \textbf{max\_iter} por si queremos poner un máximo de iteraciones.
 
 \subsection*{Resultados obtenidos}
 % Please add the following required packages to your document preamble:
@@ -395,6 +466,9 @@ $$\textbf{AUC score:  } 0.8350842721159724$$
 $$\textbf{SCORE:  } 0.8301329394387001$$
 $$\textbf{AUC score:  } 0.8289494367304165$$
 
+
+
+\newpage
 \section{Análisis de los resultados}
 Podemos observar que tenemos aproximadamente un 80\% de precisión, es decir, el modelo ha acertado un 80\% de los casos que se le
 ha propuesto. No 
@@ -403,13 +477,11 @@ ha propuesto. No
 \section{Interpretación de los resultados}
 
 
-\section{}
 
-
-\section{Conclusión}
+\section{Conclusión} % MODELO FINAL SELECCIONADO
 
 
 \section{Bibliografía}
-
+% https://es.mathworks.com/discovery/support-vector-machine.html
 
 \end{document}

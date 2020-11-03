@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.25)  31 OCT 2020 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.25)  3 NOV 2020 01:58
 entering extended mode
 **"c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/memoria.tex"
 ("c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/memoria.tex"
@@ -394,7 +394,7 @@ LaTeX Info: Redefining \nameref on input line 59.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count134
-<img/ugr.png, id=51, 329.73187pt x 329.73187pt>
+<img/ugr.png, id=47, 329.73187pt x 329.73187pt>
 File: img/ugr.png Graphic file (type png)
 <use img/ugr.png>
 Package pdftex.def Info: img/ugr.png  used on input line 69.
@@ -404,7 +404,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 65--80
 []$[]$ 
  []
 
-<img/etsiit.jpeg, id=53, 197.73875pt x 256.96pt>
+<img/etsiit.jpeg, id=49, 197.73875pt x 256.96pt>
 File: img/etsiit.jpeg Graphic file (type jpg)
 <use img/etsiit.jpeg>
 Package pdftex.def Info: img/etsiit.jpeg  used on input line 91.
@@ -431,110 +431,116 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [2] [3]
-<img/birads-distribution.png, id=93, 520.94624pt x 371.3875pt>
+<img/birads-distribution.png, id=88, 520.94624pt x 371.3875pt>
 File: img/birads-distribution.png Graphic file (type png)
 <use img/birads-distribution.png>
 Package pdftex.def Info: img/birads-distribution.png  used on input line 194.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/age-distribution.png, id=94, 520.94624pt x 371.3875pt>
+<img/age-distribution.png, id=89, 520.94624pt x 371.3875pt>
 File: img/age-distribution.png Graphic file (type png)
 <use img/age-distribution.png>
 Package pdftex.def Info: img/age-distribution.png  used on input line 198.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/shape-distribution.png, id=95, 520.94624pt x 371.3875pt>
+<img/shape-distribution.png, id=90, 520.94624pt x 371.3875pt>
 File: img/shape-distribution.png Graphic file (type png)
 <use img/shape-distribution.png>
 Package pdftex.def Info: img/shape-distribution.png  used on input line 209.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/margin-distribution.png, id=96, 520.94624pt x 371.3875pt>
+<img/margin-distribution.png, id=91, 520.94624pt x 371.3875pt>
 File: img/margin-distribution.png Graphic file (type png)
 <use img/margin-distribution.png>
 Package pdftex.def Info: img/margin-distribution.png  used on input line 213.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/density-distribution.png, id=97, 520.94624pt x 371.3875pt>
+<img/density-distribution.png, id=92, 520.94624pt x 371.3875pt>
 File: img/density-distribution.png Graphic file (type png)
 <use img/density-distribution.png>
 Package pdftex.def Info: img/density-distribution.png  used on input line 224.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/severity-distribution.png, id=98, 526.96875pt x 371.3875pt>
+<img/severity-distribution.png, id=93, 526.96875pt x 371.3875pt>
 File: img/severity-distribution.png Graphic file (type png)
 <use img/severity-distribution.png>
 Package pdftex.def Info: img/severity-distribution.png  used on input line 228.
 (pdftex.def)             Requested size: 184.44182pt x 129.98756pt.
  [4 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/birads-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/age-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/shape-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/margin-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/density-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/severity-distribution.png>] [5]
-<img/matrix-knn.png, id=115, 471.7625pt x 332.24126pt>
+<img/matrix-knn.png, id=110, 471.7625pt x 332.24126pt>
 File: img/matrix-knn.png Graphic file (type png)
 <use img/matrix-knn.png>
 Package pdftex.def Info: img/matrix-knn.png  used on input line 295.
 (pdftex.def)             Requested size: 235.88066pt x 166.12021pt.
  [6 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-knn.png>]
-<img/matrix-tree.png, id=123, 471.7625pt x 332.24126pt>
+<img/matrix-tree.png, id=118, 471.7625pt x 332.24126pt>
 File: img/matrix-tree.png Graphic file (type png)
 <use img/matrix-tree.png>
-Package pdftex.def Info: img/matrix-tree.png  used on input line 335.
+Package pdftex.def Info: img/matrix-tree.png  used on input line 334.
 (pdftex.def)             Requested size: 235.88066pt x 166.12021pt.
- [7] [8 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-tree.png>]
-<img/matrix-naivebayes.png, id=139, 471.7625pt x 332.24126pt>
+ [7 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-tree.png>]
+<img/matrix-naivebayes.png, id=126, 471.7625pt x 332.24126pt>
 File: img/matrix-naivebayes.png Graphic file (type png)
 <use img/matrix-naivebayes.png>
-Package pdftex.def Info: img/matrix-naivebayes.png  used on input line 372.
+Package pdftex.def Info: img/matrix-naivebayes.png  used on input line 370.
 (pdftex.def)             Requested size: 235.88066pt x 166.12021pt.
-<img/neural-network.png, id=140, 1041.8925pt x 399.74344pt>
+ [8]
+<img/neural-network.png, id=136, 1041.8925pt x 399.74344pt>
 File: img/neural-network.png Graphic file (type png)
 <use img/neural-network.png>
-Package pdftex.def Info: img/neural-network.png  used on input line 382.
-(pdftex.def)             Requested size: 364.66785pt x 139.9123pt.
+Package pdftex.def Info: img/neural-network.png  used on input line 379.
+(pdftex.def)             Requested size: 395.92326pt x 151.90407pt.
 
-Overfull \hbox (7.0406pt too wide) in paragraph at lines 385--388
+Overfull \hbox (5.92326pt too wide) in paragraph at lines 379--380
+ [][] 
+ []
+
+
+Overfull \hbox (7.0406pt too wide) in paragraph at lines 382--385
 []\T1/cmr/m/n/10.95 Como po-de-mos ver en la fi-gu-ra, ca-da se-ñal que lle-ga a las den-dri-tas {$\OML/cmm/m/it/10.95 x[]; x[]; :::; x[]$\T1/cmr/m/n/10.95 }
  []
 
 [9 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-naivebayes.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/neural-network.png>]
-Overfull \hbox (14.21661pt too wide) detected at line 399
+Overfull \hbox (14.21661pt too wide) detected at line 396
 \OML/cmm/m/it/10.95 PerceptronClf \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 MLPClassifier\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 hidden[]layer[]sizes \OT1/cmr/m/n/10.95 = 100\OML/cmm/m/it/10.95 ; random[]state \OT1/cmr/m/n/10.95 = 0)
  []
 
 
-Overfull \hbox (1.11737pt too wide) in paragraph at lines 406--410
+Overfull \hbox (1.11737pt too wide) in paragraph at lines 403--407
 \T1/cmr/m/n/10.95 con la que po-de-mos se-lec-cio-nar la fun-ción de ac-ti-va-ción a uti-li-zar; \T1/cmr/bx/n/10.95 early_stopping\T1/cmr/m/n/10.95 ,
  []
 
-<img/matrix-neuralnetwork.png, id=147, 471.7625pt x 334.24875pt>
+<img/matrix-neuralnetwork.png, id=142, 471.7625pt x 334.24875pt>
 File: img/matrix-neuralnetwork.png Graphic file (type png)
 <use img/matrix-neuralnetwork.png>
-Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 428.
+Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 425.
 (pdftex.def)             Requested size: 235.88066pt x 167.12396pt.
 [10] [11 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-neuralnetwork.png>]
 File: img/matrix-neuralnetwork.png Graphic file (type png)
 <use img/matrix-neuralnetwork.png>
-Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 464.
+Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 460.
 (pdftex.def)             Requested size: 235.88066pt x 167.12396pt.
- [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 487.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 487.
+ [12] [13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
+ [14] [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
  ("c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.aux"
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 487.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 487.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: 9F1867FDB39E0C42BE8835FE59235DC6;756.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 487.
+(rerunfilecheck)             Checksum: CBD1D2A42B0C261F37CE366931433B20;722.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 553.
  ) 
 Here is how much of TeX's memory you used:
  9220 strings out of 492895
- 132909 string characters out of 3133482
+ 132903 string characters out of 3133482
  436746 words of memory out of 3000000
- 12978 multiletter control sequences out of 15000+200000
+ 12977 multiletter control sequences out of 15000+200000
  17493 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,43p,340b,373s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,12n,43p,340b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2488.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.pdf" (14 pages, 489406 bytes).
+Output written on "c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.pdf" (16 pages, 498000 bytes).
 PDF statistics:
- 534 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 544 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 

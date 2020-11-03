@@ -3,11 +3,10 @@
 \contentsline {section}{\numberline {2}Procesado de datos}{3}{section.2}% 
 \contentsline {section}{\numberline {3}Configuraci\IeC {\'o}n de algoritmos}{5}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}K-Nearest-Neighbors (k-NN)}{5}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Decision Tree}{7}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.2}Decision Tree}{6}{subsection.3.2}% 
 \contentsline {subsection}{\numberline {3.3}Naive-Bayes}{8}{subsection.3.3}% 
 \contentsline {subsection}{\numberline {3.4}Neural Network}{9}{subsection.3.4}% 
 \contentsline {subsection}{\numberline {3.5}Support Vector Machine (SVM)}{11}{subsection.3.5}% 
 \contentsline {section}{\numberline {4}An\IeC {\'a}lisis de los resultados}{13}{section.4}% 
-\contentsline {section}{\numberline {5}Interpretaci\IeC {\'o}n de los resultados}{13}{section.5}% 
-\contentsline {section}{\numberline {6}Conclusi\IeC {\'o}n}{13}{section.6}% 
-\contentsline {section}{\numberline {7}Bibliograf\IeC {\'\i }a}{13}{section.7}% 
+\contentsline {section}{\numberline {5}Interpretaci\IeC {\'o}n de los resultados y conclusi\IeC {\'o}n}{15}{section.5}% 
+\contentsline {section}{\numberline {6}Bibliograf\IeC {\'\i }a}{15}{section.6}% 

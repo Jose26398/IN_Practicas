@@ -295,7 +295,6 @@ influencia de los vecinos en la predicción (todos ponderan igual, los cercanos 
     \includegraphics[scale=0.5]{img/matrix-knn.png}    
 \end{figure}
 $$\textbf{SCORE:  } 0.7991137370753324$$
-$$\textbf{AUC score:  } 0.7986900707361801$$
 
 
 \subsection{Decision Tree}
@@ -324,7 +323,7 @@ comentado anteriormente.
         \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
         \textbf{0} & 0.75 & 0.82 & 0.78 & 347 \\
         \textbf{1} & 0.79 & 0.72 & 0.75 & 330 \\ \hline
-        \textbf{accuracy} & 0.77 & 677 & 0.80 & 677 \\
+        \textbf{accuracy} & & & 0.77 & 677  \\
         \textbf{macro avg} & 0.77 & 0.77 & 0.77 & 677 \\
         \textbf{weighted avg} & 0.77 & 0.77 & 0.77 & 677
     \end{tabular}
@@ -335,7 +334,6 @@ comentado anteriormente.
     \includegraphics[scale=0.5]{img/matrix-tree.png}    
 \end{figure}
 $$\textbf{SCORE:  } 0.7666174298375185$$
-$$\textbf{AUC score:  } 0.7653567374028469$$
 
 
 \subsection{Naive-Bayes}
@@ -361,7 +359,7 @@ No ponemos ningún parámetro ya que es un clasificador que no se puede modelar 
         \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
         \textbf{0} & 0.85 & 0.78 & 0.81 & 347 \\
         \textbf{1} & 0.79 & 0.85 & 0.82 & 330 \\ \hline
-        \textbf{accuracy} & 0.82 & 677 & 0.80 & 677 \\
+        \textbf{accuracy} & & & 0.82 & 677 \\
         \textbf{macro avg} & 0.82 & 0.82 & 0.82 & 677 \\
         \textbf{weighted avg} & 0.82 & 0.82 & 0.82 & 677
     \end{tabular}
@@ -372,14 +370,13 @@ No ponemos ningún parámetro ya que es un clasificador que no se puede modelar 
     \includegraphics[scale=0.5]{img/matrix-naivebayes.png}    
 \end{figure}
 $$\textbf{SCORE:  } 0.8153618906942393$$
-$$\textbf{AUC score:  } 0.8162474893022443$$
 
 
 \subsection{Neural Network}
 Estos algoritmos están basados en los propios sistemas nerviosos biológicos:
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35]{img/neural-network.png}    
+    \includegraphics[scale=0.38]{img/neural-network.png}    
 \end{figure}
 
 Como podemos ver en la figura, cada señal que llega a las dendritas \{$x_1,x_2,...,x_n$\} serían nuestros datos de entrada
@@ -417,7 +414,7 @@ learning\_rate} (tasa de aprendizaje) ó \textbf{tol} (tolerancia).
         \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
         \textbf{0} & 0.82 & 0.87 & 0.85 & 347 \\
         \textbf{1} & 0.86 & 0.80 & 0.83 & 330 \\ \hline
-        \textbf{accuracy} & 0.84 & 677 & 0.80 & 677 \\
+        \textbf{accuracy} & & & 0.84 & 677 \\
         \textbf{macro avg} & 0.84 & 0.84 & 0.84 & 677 \\
         \textbf{weighted avg} & 0.84 & 0.84 & 0.84 & 677
     \end{tabular}
@@ -428,7 +425,6 @@ learning\_rate} (tasa de aprendizaje) ó \textbf{tol} (tolerancia).
     \includegraphics[scale=0.5]{img/matrix-neuralnetwork.png}    
 \end{figure}
 $$\textbf{SCORE:  } 0.8360413589364845$$
-$$\textbf{AUC score:  } 0.8350842721159724$$
 
 \subsection{Support Vector Machine (SVM)}
 El último algoritmo que vamos a utilizar es uno de los más populares en cuanto a la clasificación binaria. Una SVM construye
@@ -436,7 +432,7 @@ un hiperplano entre las dos clases de forma que la separación entre ellas se am
 de entrada en un espacio de caracteristicas mediante el \textbf{producto interno (escalar)}.
 
 A la hora de implementarlo lo haremos de la siguiente forma:
-$$SvmClf = SVC(random_state=0, gamma='auto')$$
+$$SvmClf = SVC(random\_state=0, gamma='auto')$$
 
 El primer parámetro que tenemos aquí es la semilla, al igual que en los otros. El siguiente parámetro es para seleccionar
 el coeficiente del \textbf{kernel} (el cual también es otro parámetro que también se podrá modificar).
@@ -453,7 +449,7 @@ neuronales; o hasta un \textbf{max\_iter} por si queremos poner un máximo de it
         \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
         \textbf{0} & 0.81 & 0.88 & 0.84 & 347 \\
         \textbf{1} & 0.86 & 0.78 & 0.82 & 330 \\ \hline
-        \textbf{accuracy} & 0.83 & 677 & 0.80 & 677 \\
+        \textbf{accuracy} & & & 0.83 & 677 \\
         \textbf{macro avg} & 0.83 & 0.83 & 0.83 & 677 \\
         \textbf{weighted avg} & 0.83 & 0.83 & 0.83 & 677
     \end{tabular}
@@ -464,21 +460,91 @@ neuronales; o hasta un \textbf{max\_iter} por si queremos poner un máximo de it
     \includegraphics[scale=0.5]{img/matrix-neuralnetwork.png}    
 \end{figure}
 $$\textbf{SCORE:  } 0.8301329394387001$$
-$$\textbf{AUC score:  } 0.8289494367304165$$
 
 
 
 \newpage
 \section{Análisis de los resultados}
-Podemos observar que tenemos aproximadamente un 80\% de precisión, es decir, el modelo ha acertado un 80\% de los casos que se le
-ha propuesto. No 
+Esta es la tabla resumen con todos los resultados:
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+\centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Algoritmo} & \textbf{precision} & \textbf{f1-score} \\ \hline
+        kNN & 0.79911 & 0.81 \\ \hline
+        DecisionTree & 0.7666 & 0.78 \\ \hline
+        Naive-Bayes & 0.8153 & 0.80 \\ \hline
+        \textbf{Neural Network} & \textbf{0.83604} & \textbf{0.84} \\ \hline
+        SVM & 0.83013 & 0.83 \\ \hline
+    \end{tabular}
+\end{table}
+
+Podemos observar que, en todas las ejecuciones, hemos obtenido aproximadamente un 80\% de precisión, es decir, los modelos
+han acertado un 80\% de los casos que se le ha propuesto. El que mejor lo ha hecho de todos ha sido el \textbf{MultiLayer
+Perceptron}, con una precisión del 0.836041 de aciertos; y el que peor lo ha hecho ha sido el \textbf{Decision Tree} con un
+0.7666174 de aciertos.
+
+No obstante, podemos decir que todos los clasificadores que hemos escogido, lo han hecho bastante bien a priori. Que el
+clasificador con la menor precisión tenga aproximadamente un 75\% de acierto es muy buena señal, aunque ahora tenemos que
+mirar que la clasificación la ha hecho correctamente (por ejemplo, ha podido clasificarlos todos como 'maligno' y que una
+gran mayoría de los casos que le han llegado sean también 'maligno').
+
+Para esto, vamos a mirar las matrices de confusión. Como podemos ver, los datos están perfectamente distribuidos, es decir,
+tenemos similares cantidades de datos tanto de una clase como de otra. Además, al tener tasas de acierto altas, se puede ver
+como los valores altos de la matriz corresponden a su diagonal (y que a su ver corresponden a los \textit{True positives} y
+a los \textit{True negatives}).
+
+\begin{itemize}
+    \item \textbf{k-NN}. Pese a ser un modelo que no aprende, ya que consulta a los datos de entrenamiento cada vez que
+          tiene que predecir una etiqueta, tiene una precisión alta. También hemos comentado lo simple que es, por lo que
+          cambiar parámetros y probar otros métodos para ver si mejoramos la precisión es muy fácil. Por ejemplo, subiendo
+          el k-valor a 100 se consigue mejorar la precisión hasta el $\approx 83\%$, lo que nos dice que el modelo es bastante
+          sensible al ruido y a los datos desequilibrados.
+
+          A parte de que es sensible al ruido, es un algoritmo que depende de la distancia, por lo que un estudio más en
+          profundidad de una función de distancia adecuada, también puede mejorar los resultados.
+    
+    \newpage
+    \item \textbf{DecisionTree}. Este modelo, al igual que el anterior, es fácil de entender y utilizar. Además es eficiente
+          y trabaja bien con datos con ruido, algo que le costaba más al algoritmo anterior.
+
+          Sin embargo, hemos obtenido peores resultados, lo cual se debe a varios factores. Lo primero es que no detectan
+          correlación entre los atributos, es decir, que no tiene en cuenta si dos características van cambiando
+          sistemáticamente para cada uno de los datos. Por otro lado, el mayor problema que les veo es el sobreaprendizaje
+          y la división del dominio en regiones rectangulares, y a la hora de validar el modelo es donde más precisión pierde.
+
+    \item \textbf{Naive-Bayes}. Como ya pudimos preveer al describir el algoritmo, ha dado unos resultados muy competitivos.
+          Lo más probable es que la falta de precisión (la poca que hay, no es que el modelo sea malo) sea debida a la falta
+          de dependencia entre las variables, lo cual es complicado de retocar en este modelo. Debido a esto yo preferiría
+          indagar e investigar más otros clasificadores a este.
+
+    \item \textbf{Neural Network}. Es el que mejor resultado nos ha dado, principalmente por su eficacia antes los valores
+          con ruido o irregulares, su eficacia para evaluar nuevos casos y, sobre todo, que aprende a medida que le van
+          llegando nuevos datos (y puede seguir aprendiendo después de entrenar con los actuales).
+
+          Puede ser bastante complejo el modificar una red neuronal, aunque modificar el MLP que hemos propuesto es más factible
+          que, por ejemplo, el modelo anterior. También podemos crear una red desde 0, adaptada nuestro conjunto de datos. En
+          mi caso, yo me quedaría este modelo por su variabilidad de propuestas para resolverlo, a parte de que ha sido el que
+          mejor porcentaje de acierto nos ha dado.
+
+          En contra tenemos que es un modelo con un coste en tiempo muy alto, y que gran parte del entrenamiento es por ensayo
+          y error, debido a que es muy difícil de interpretar.
+
+    \item \textbf{SVM}. Este modelo es bueno en comparación a otros ya que la complejidad computacional se reduce. También
+          tiene parámetro de regularazación, por lo que se puede evitar el sobreajuste; y con el parámetro del kernel puede
+          ir aprendiendo. De ahí que haya obtenido un gran resultado.
+
+          Lo que más ha podido afectar al clasificador son los datos con ruido, y en un futuro, también le puede afectar que
+          no es adecuado para conjuntos de datos grandes (al contrario que le le pasa a las redes neuronales, que siguen
+          aprendiendo).
+\end{itemize}
 
 
-\section{Interpretación de los resultados}
 
+\section{Interpretación de los resultados y conclusión}
 
-
-\section{Conclusión} % MODELO FINAL SELECCIONADO
 
 
 \section{Bibliografía}

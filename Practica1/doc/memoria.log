@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.25)  3 NOV 2020 01:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.25)  3 NOV 2020 21:57
 entering extended mode
 **"c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/memoria.tex"
 ("c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/memoria.tex"
@@ -465,82 +465,156 @@ Package pdftex.def Info: img/severity-distribution.png  used on input line 228.
 <img/matrix-knn.png, id=110, 471.7625pt x 332.24126pt>
 File: img/matrix-knn.png Graphic file (type png)
 <use img/matrix-knn.png>
-Package pdftex.def Info: img/matrix-knn.png  used on input line 295.
+Package pdftex.def Info: img/matrix-knn.png  used on input line 294.
 (pdftex.def)             Requested size: 235.88066pt x 166.12021pt.
  [6 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-knn.png>]
 <img/matrix-tree.png, id=118, 471.7625pt x 332.24126pt>
 File: img/matrix-tree.png Graphic file (type png)
 <use img/matrix-tree.png>
-Package pdftex.def Info: img/matrix-tree.png  used on input line 334.
+Package pdftex.def Info: img/matrix-tree.png  used on input line 333.
 (pdftex.def)             Requested size: 235.88066pt x 166.12021pt.
  [7 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-tree.png>]
 <img/matrix-naivebayes.png, id=126, 471.7625pt x 332.24126pt>
 File: img/matrix-naivebayes.png Graphic file (type png)
 <use img/matrix-naivebayes.png>
-Package pdftex.def Info: img/matrix-naivebayes.png  used on input line 370.
+Package pdftex.def Info: img/matrix-naivebayes.png  used on input line 369.
 (pdftex.def)             Requested size: 235.88066pt x 166.12021pt.
  [8]
 <img/neural-network.png, id=136, 1041.8925pt x 399.74344pt>
 File: img/neural-network.png Graphic file (type png)
 <use img/neural-network.png>
-Package pdftex.def Info: img/neural-network.png  used on input line 379.
+Package pdftex.def Info: img/neural-network.png  used on input line 378.
 (pdftex.def)             Requested size: 395.92326pt x 151.90407pt.
 
-Overfull \hbox (5.92326pt too wide) in paragraph at lines 379--380
+Overfull \hbox (5.92326pt too wide) in paragraph at lines 378--379
  [][] 
  []
 
 
-Overfull \hbox (7.0406pt too wide) in paragraph at lines 382--385
+Overfull \hbox (7.0406pt too wide) in paragraph at lines 381--384
 []\T1/cmr/m/n/10.95 Como po-de-mos ver en la fi-gu-ra, ca-da se-ñal que lle-ga a las den-dri-tas {$\OML/cmm/m/it/10.95 x[]; x[]; :::; x[]$\T1/cmr/m/n/10.95 }
  []
 
 [9 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-naivebayes.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/neural-network.png>]
-Overfull \hbox (14.21661pt too wide) detected at line 396
+Overfull \hbox (14.21661pt too wide) detected at line 395
 \OML/cmm/m/it/10.95 PerceptronClf \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 MLPClassifier\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 hidden[]layer[]sizes \OT1/cmr/m/n/10.95 = 100\OML/cmm/m/it/10.95 ; random[]state \OT1/cmr/m/n/10.95 = 0)
  []
 
 
-Overfull \hbox (1.11737pt too wide) in paragraph at lines 403--407
+Overfull \hbox (1.11737pt too wide) in paragraph at lines 402--406
 \T1/cmr/m/n/10.95 con la que po-de-mos se-lec-cio-nar la fun-ción de ac-ti-va-ción a uti-li-zar; \T1/cmr/bx/n/10.95 early_stopping\T1/cmr/m/n/10.95 ,
  []
 
 <img/matrix-neuralnetwork.png, id=142, 471.7625pt x 334.24875pt>
 File: img/matrix-neuralnetwork.png Graphic file (type png)
 <use img/matrix-neuralnetwork.png>
-Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 425.
+Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 424.
 (pdftex.def)             Requested size: 235.88066pt x 167.12396pt.
 [10] [11 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-neuralnetwork.png>]
 File: img/matrix-neuralnetwork.png Graphic file (type png)
 <use img/matrix-neuralnetwork.png>
-Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 460.
+Package pdftex.def Info: img/matrix-neuralnetwork.png  used on input line 459.
 (pdftex.def)             Requested size: 235.88066pt x 167.12396pt.
- [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
- [14] [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
+ [12] [13] [14] [15]
+<img/matrix-test.png, id=172, 463.7325pt x 332.24126pt>
+File: img/matrix-test.png Graphic file (type png)
+<use img/matrix-test.png>
+Package pdftex.def Info: img/matrix-test.png  used on input line 630.
+(pdftex.def)             Requested size: 231.86568pt x 166.12021pt.
+ [16 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica1/doc/img/matrix-test.png>] [17]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 658.
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 657--659
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . svm . SVC .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
+\T1/cmtt/m/n/10.95 ensemble . RandomForestClassifier . html # sklearn . ensemble .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--667
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . neural _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--671
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--675
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--679
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / auto _ examples / model _ selection /
+ []
+
+
+Overfull \hbox (112.6471pt too wide) in paragraph at lines 677--679
+\T1/cmtt/m/n/10.95 plot _ learning _ curve . html # sphx-[]glr-[]auto-[]examples-[]model-[]selection-[]plot-[]learning-[]curve-[]py$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 681--683
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . metrics .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--687
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . metrics .
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 709--711
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . model _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--715
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . model _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--719
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / auto _ examples / model _ selection /
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 724.
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 724.
  ("c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.aux"
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 724.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 724.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: CBD1D2A42B0C261F37CE366931433B20;722.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 553.
+(rerunfilecheck)             Checksum: 70770D6E079B7E0E6489F03525C1E376;719.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 724.
  ) 
 Here is how much of TeX's memory you used:
- 9220 strings out of 492895
- 132903 string characters out of 3133482
- 436746 words of memory out of 3000000
- 12977 multiletter control sequences out of 15000+200000
- 17493 words of font info for 40 fonts, out of 3000000 for 9000
+ 9279 strings out of 492895
+ 134165 string characters out of 3133482
+ 439746 words of memory out of 3000000
+ 13011 multiletter control sequences out of 15000+200000
+ 17807 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,43p,340b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2488.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.pdf" (16 pages, 498000 bytes).
+ 28i,12n,43p,340b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2488.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on "c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica1\doc\memoria.pdf" (20 pages, 543922 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 672 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

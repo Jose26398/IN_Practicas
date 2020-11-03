@@ -85,7 +85,7 @@
 \centering
 
 \textbf{Autor}\\ {\autor{}}\\[2.5ex]
-\textbf{Rama}\\ {Computación y Sistemas Inteligentes}\\[2.5ex]
+\textbf{Rama}\\ {Sistemas de Información}\\[2.5ex]
 \vspace{0.3cm}
 
 \includegraphics[scale=0.3]{img/etsiit.jpeg}
@@ -252,7 +252,6 @@ Por último, para evaluar los resultados obtenidos vamos a usar:
     \item \textbf{Classification report.} Crea un informe que muestra las principales métricas de clasificación: precisión, recall,
           f1-score, y promedios macro, ponderado y de la muestra.
     \item \textbf{Score.} Misma medida del informe anterior mostrada con un poco más de precisión.
-    \item \textbf{AUC Score.} Métrica que calcula el área bajo la curva ROC generada a partir de las predicciones.
     \item \textbf{Confusion matrix.} Muestra una matriz para evaluar la precisión de la clasificación. Cada fila representa las
           instancias de una clase predicha, mientras que cada columna representa las instancias reales de ésta.
 \end{itemize}
@@ -294,8 +293,8 @@ influencia de los vecinos en la predicción (todos ponderan igual, los cercanos 
     \centering
     \includegraphics[scale=0.5]{img/matrix-knn.png}    
 \end{figure}
+\vspace{-20px}
 $$\textbf{SCORE:  } 0.7991137370753324$$
-
 
 \subsection{Decision Tree}
 Este clasificador, como su propio nombre indica, es un árbol en el que cada \textbf{hoja} es una clase y cada \textbf{nodo} es
@@ -544,10 +543,182 @@ a los \textit{True negatives}).
 
 
 \section{Interpretación de los resultados y conclusión}
+Como ya he dicho, me voy a quedar con el \textbf{MultiLayer Perceptron} de las redes neuronales debido a la gran flexibilidad
+que tiene y a las posibilidades que nos ofrece para cambiar de modelo. Como también hemos visto que ha sido el modelo que mejor
+ha funcionado, podremos utilizarlo para intentar mejorar el preprocesado de los datos, y que no sea simplemente eliminar los
+datos que son nulos.
+
+Por ejemplo, podemos probar a utilizar PCA sobre el conjunto de datos. Esto lo que hace es un análisis de los componentes
+principales y reduce la dimensionalidad de los datos, de forma que los descompone en valores singulares (busca las variables
+no correlacionadas) y, posteriormente, los elimina del conjunto. El resultado ha sido el siguiente:
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.81 & 0.87 & 0.84 & 347 \\
+        \textbf{1} & 0.85 & 0.79 & 0.82 & 330 \\ \hline
+        \textbf{accuracy} & & & 0.83 & 677 \\
+        \textbf{macro avg} & 0.83 & 0.83 & 0.83 & 677 \\
+        \textbf{weighted avg} & 0.83 & 0.83 & 0.83 & 677
+    \end{tabular}
+\end{table}
+\vspace{-10px}
+$$\textbf{SCORE:  } 0.8286558345642541$$
+
+Podemos observar que el resultado apenas cambia, por lo que podemos deducir que el analizador no ha encontrado datos no
+correlacionados y tampoco los ha modificado mucho. Por lo tanto, sólo seguiremos utilizando el \textit{StandarScaler} que ya
+teníamos.
+
+A continuación, probaremos modificando parámetros de nuestro modelo elegido. Para ello, voy a realizar varias ejecuciones
+modificando el número de capas ocultas, el solver para la optimización de pesos y el parámetro ''\textit{early\_stopping}''
+por si hay excesivo sobreajuste en el modelo. El resultado lo mostraré en la siguiente tabla:
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{hidden\_layer\_sizes} & 25 & 50 & 50 & 100 & 200 & 200 \\ \hline
+        \textbf{solver} & adam & adam & adam & adam & adam & adam \\ \hline
+        \textbf{early\_stopping} & False & False & True & False & False & True \\ \hline
+        \textbf{Score} & 0.82865 & 0.82570 & 0.79025 & \textbf{0.83604} & 0.83161 & 0.80945 \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        \textbf{hidden\_layer\_sizes} & 25 & 50 & 50 & 100 & 200 & 200 \\ \hline
+        \textbf{solver} & sgd & sgd & sgd & sgd & sgd & sgd \\ \hline
+        \textbf{early\_stopping} & False & False & True & False & False & True \\ \hline
+        \textbf{Score} & 0.82127 & 0.81979 & 0.78581 & 0.82274 & 0.82570 & 0.81388 \\ \hline
+    \end{tabular}%
+    }
+\end{table}
+
+Podemos ver que el resultado apenas cambia entre unas ejecuciones y otras. Por lo general, los mejores resultados se obtienen
+sobre las 100 capas ocultas, siendo el solver '\textit{adam}' (el que trae por defecto) ligeramente mejor que el '\textit{sgd}'.
+En cuanto al parámetro ''\textit{early\_stopping}'' podemos ver que tampoco cambia demasiado los resultados, por lo que podemos
+que apenas teníamos sobreajuste en los datos.
+
+A continuación, viendo que las pruebas no mejoran demasiado el modelo, procederé a ejecutar el conjunto de test con el modelo
+que más precisión ha obtenido: 100 capas ocultas con '\textit{adam}' y sin '\textit{early\_stopping}''. Este ha sido el
+resultado final:
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{c|cccc}
+        \textbf{} & \textbf{precision} & \textbf{recall} & \textbf{f1-score} & \textbf{support} \\ \hline
+        \textbf{0} & 0.82 & 0.80 & 0.81 & 90 \\
+        \textbf{1} & 0.78 & 0.80 & 0.79 & 80 \\ \hline
+        \textbf{accuracy} & & & 0.80 & 170 \\
+        \textbf{macro avg} & 0.80 & 0.80 & 0.80 & 170 \\
+        \textbf{weighted avg} & 0.80 & 0.80 & 0.80 & 170
+    \end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{img/matrix-test.png}    
+\end{figure}
+$$\textbf{SCORE:  } 0.8$$
+
+Como podemos observar, el resultado ha sido lo que esperábamos, y es que ha obtenido prácticamente los mismos valores que los
+modelos anteriores. Que haya obtenido un 80\% exacto nos puede hacer pensar que está mal hecho, sin embargo, al tener tan pocos
+datos, es posible que se haya dado esto (es más, si miramos la matriz de confusión y sumamos los verdaderos positivos y
+negativos, podremos comprobar que es el 80\% exacto del total de ejemplos).
+
+Todas estas ejecuciones y, viendo los resultados que hemos obtenido, lo que nos lleva a pensar es que el modelo está 'atascado'
+en este punto. Es decir, que en cuanto a entrenamiento no vamos a obtener muchos mejores resultados con los datos que actualmente
+(obviando que podemos crear un modelo que esté sobreajustado de más, algo que tampoco nos conviene). Un conjunto con 961 datos,
+de los cuales unos 120 aproximadamente contienen atributos nulos o faltantes, y que a su vez tenemos que dividirlo en datos
+para entrenamiento y test; pues es un dataset que se nos queda bastante corto.
+
+Pese a todo esto, con los modelos analizados obtenemos unos porcentajes sobre 80\% de acierto, que es un porcentaje muy bueno.
+Con esto quiero decir que, con un dataset más grande y con una o dos características más que sean relevantes para decir si el
+tumor es maligno o benigno (aunque esto son temas que no puedo solucionar, ni sé si se puede hacer algo más) pienso que
+podríamos obtener unos resultados muy buenos y una tasa de acierto realmente alta.
 
 
+\newpage
 
-\section{Bibliografía}
-% https://es.mathworks.com/discovery/support-vector-machine.html
+% Pagina de bibliografia
+\begin{thebibliography}{}
+    
+    \bibitem{svc}
+    Scikit-Learn. \textit{SVC}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC}
+    
+    \bibitem{random_forest}
+    Scikit-Learn. \textit{RandomForestClassifier}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier}
+    
+    \bibitem{neural_network}
+    Scikit-Learn. \textit{MLPClassifier}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier}
+    
+    \bibitem{scaler}
+    Scikit-Learn. \textit{StandardScaler}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}
+    
+    \bibitem{pca}
+    Scikit-Learn. \textit{PCA}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html}
+    
+    \bibitem{bib:learning_curve}
+    Scikit-Learn. \textit{plot\_learning\_curve}
+    \\\url{https://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html#sphx-glr-auto-examples-model-selection-plot-learning-curve-py}
+    
+    \bibitem{bib:recall}
+    Scikit-Learn. \textit{recall\_score}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.recall_score.html}
+    
+    \bibitem{bib:precision}
+    Scikit-Learn. \textit{precision\_score}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html}
+    
+    \bibitem{bib:normalize}
+    \textit{Should I normalize/standardize/rescale the data?}
+    \\\url{http://www.faqs.org/faqs/ai-faq/neural-nets/part2/}
+    
+    \bibitem{bib:sensitivity-specifity}
+    Wikipedia. \textit{Sensitivity and specifity}
+    \\\url{https://en.wikipedia.org/wiki/Sensitivity_and_specificity}
+    
+    \bibitem{bib:svm-kernels}
+    DataFlair. \textit{Kernel Functions-Introduction to SVM Kernel \& Examples}
+    \\\url{https://data-flair.training/blogs/svm-kernel-functions/}
+    
+    \bibitem{bib:loss-nn}
+    Isaac Changhau. \textit{Loss Functions in Neural Networks}
+    \\\url{https://isaacchanghau.github.io/post/loss_functions/}
+    
+    \bibitem{bib:svm}
+    MathWorks\textit{Support Vector Machine}
+    \\\url{https://es.mathworks.com/discovery/support-vector-machine.html}
+    
+    \bibitem{bib:cross_val_score}
+    Scikit-Learn. \textit{cross\_val\_score}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html}
+    
+    \bibitem{bib:train_test_split}
+    Scikit-Learn. \textit{train\_test\_split}
+    \\\url{https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html}
+    
+    \bibitem{bib:confusion-matrix}
+    Scikit-Learn. \textit{Confusion Matrix}
+    \\\url{https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html}
+    
+    \end{thebibliography}
+
+
 
 \end{document}

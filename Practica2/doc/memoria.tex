@@ -43,8 +43,8 @@
 % Comando para poner el nombre de la asignatura
 \newcommand{\asignatura}{Inteligencia de Negocio}
 \newcommand{\autor}{José María Sánchez Guerrero}
-\newcommand{\titulo}{Práctica 1}
-\newcommand{\subtitulo}{Resolución de problemas de clasificación y análisis experimental.}
+\newcommand{\titulo}{Práctica 2}
+\newcommand{\subtitulo}{Visualización y segmentación}
 
 % Configuracion de encabezados y pies de pagina
 \pagestyle{fancy}
@@ -107,33 +107,83 @@
 
 
 
-\section{Introducción}
+\section{Visualización}
 
-En este trabajo vamos a analizar el comportamiento de distintos algoritmos de clasificación en el problema propuesto. Disponemos
-de un dataset, llamado \textit{''Mammographic Mass dataset''}, en el cual se desea predecir el tipo de tumor (benigno o maligno)
-en una serie de mamografías realizadas para un estudio sobre el cáncer de mama. Este estudio lo vamos a realizar gracias a los
-siguientes atributos proporcionados en el dataset:
+Partiendo del dataset de mamografías de la práctica anterior, tendremos que realizar distintas visualizaciones y analizar los
+datos que tenemos para cada uno de los preprocesamientos. En mi caso, yo ya mostré en mi práctica anterior una pequeña visualización
+de los datos (y que los volveré a mostra para analizarlos mejor), pero en esta completaremos más detalladamente la información.
 
-\begin{itemize}
-	\item \textbf{BI-RADS.} Este parámetro representa un control de calidad de las mamografías. Consta de 7 categorías distintas,
-		  en las que, cuanto más alto sea el valor, hay una mayor probabilidad de que sea maligno.
+\subsection{Visualización de las medidas}
 
-	\item \textbf{Edad} del paciente.
-	
-	\item \textbf{Forma de la masa.} Dependiendo de como sea la masa anormal detectada, se clasifica como \textbf{R}edondeada,
-		  \textbf{O}valada, \textbf{L}obulada, \textbf{I}rregular ó \textbf{N}o definida.
+Lo primero que pudimos observar, es que tenemos tanto datos numéricos, como datos categóricos. También vimos que hay varias celdas
+con datos erróneos o perdidos (representados con el valor $NaN$):
 
-	\item \textbf{Margen de masa.} Circumscribed = 1, microlobulated = 2, obscured = 3, ill-defined = 4, spiculated = 5 (nominal).
-	
-	\item \textbf{Densidad de la masa.} Valores entre 1 y 4, siendo 1 la más alta y 4 contenido graso (no tumoral).
-	
-	\item \textbf{Severidad.} Es el atributo que se desea predecir, es decir, si es un tumor benigno o maligno.	
+\begin{table}[H]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|c|c|c|c|c|c|c|}
+    \hline
+    \textbf{} & \textbf{BI-RADS} & \textbf{Age} & \textbf{Shape} & \textbf{Margin} & \textbf{Density} & \textbf{Severity} \\ \hline
+    \textbf{0} & 5.0 & 67.0 & L & 5.0 & 3.0 & maligno \\ \hline
+    \textbf{1} & 4.0 & 43.0 & R & 1.0 & NaN & maligno \\ \hline
+    \textbf{2} & 5.0 & 58.0 & I & 5.0 & 3.0 & maligno \\ \hline
+    \textbf{3} & 4.0 & 28.0 & R & 1.0 & 3.0 & benigno \\ \hline
+    \textbf{4} & 5.0 & 74.0 & R & 5.0 & NaN & maligno \\ \hline
+    \end{tabular}%
+    }
+\end{table}
 
-\end{itemize}
+Debido a esto, es importante procesarlos para que nuestros algoritmos funcionen correctamente. La técnica que elegimos en la práctica
+anterior fue simplemente la de eliminar estos datos erróneos, con el siguiente resultado:
 
-En el dataset hay datos de 961 pacientes, sin embargo, nos gustaría dejar un porcentaje para validar el modelo y así ver cómo va
-entrenando los datos. Posteriormente, se explicará cómo se ha determinado qué datos son los de entrenamiento y cuáles son los de
-test.
+\begin{figure}[H]
+    \centering
+    
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.35]{img/birads-distribution.png}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.35]{img/age-distribution.png}
+    \end{minipage}
+    
+\end{figure}
+    
+    
+\begin{figure}[H]
+    \centering
+    
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.35]{img/shape-distribution.png}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.35]{img/margin-distribution.png}
+    \end{minipage}
+    
+\end{figure}
+    
+    
+\begin{figure}[H]
+    \centering
+    
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.35]{img/density-distribution.png}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[scale=0.35]{img/severity-distribution.png}
+    \end{minipage}
+    
+\end{figure}
+    
+Otra estrategia de preprocesamiento que podríamos haber utilizado es la de completar esos valores con datos. Esto a veces puede
+no tener sentido, ya que...
+    
+
 
 \newpage
 

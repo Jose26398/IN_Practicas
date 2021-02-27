@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.25)  8 DEC 2020 05:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.5.25)  9 DEC 2020 23:43
 entering extended mode
 **"c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/memoria.tex"
 ("c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/memoria.tex"
@@ -394,7 +394,7 @@ LaTeX Info: Redefining \nameref on input line 59.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count134
-<img/ugr.png, id=27, 329.73187pt x 329.73187pt>
+<img/ugr.png, id=39, 329.73187pt x 329.73187pt>
 File: img/ugr.png Graphic file (type png)
 <use img/ugr.png>
 Package pdftex.def Info: img/ugr.png  used on input line 69.
@@ -404,7 +404,7 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 65--80
 []$[]$ 
  []
 
-<img/etsiit.jpeg, id=29, 197.73875pt x 256.96pt>
+<img/etsiit.jpeg, id=41, 197.73875pt x 256.96pt>
 File: img/etsiit.jpeg Graphic file (type jpg)
 <use img/etsiit.jpeg>
 Package pdftex.def Info: img/etsiit.jpeg  used on input line 91.
@@ -424,22 +424,22 @@ LaTeX Info: Redefining \% on input line 1.
 \openout4 = `memoria.toc'.
 
  [1]
-<img/birads-distribution.png, id=53, 520.94624pt x 371.3875pt>
+<img/birads-distribution.png, id=68, 520.94624pt x 371.3875pt>
 File: img/birads-distribution.png Graphic file (type png)
 <use img/birads-distribution.png>
 Package pdftex.def Info: img/birads-distribution.png  used on input line 144.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/age-distribution.png, id=54, 520.94624pt x 371.3875pt>
+<img/age-distribution.png, id=69, 520.94624pt x 371.3875pt>
 File: img/age-distribution.png Graphic file (type png)
 <use img/age-distribution.png>
 Package pdftex.def Info: img/age-distribution.png  used on input line 148.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/shape-distribution.png, id=55, 520.94624pt x 371.3875pt>
+<img/shape-distribution.png, id=70, 520.94624pt x 371.3875pt>
 File: img/shape-distribution.png Graphic file (type png)
 <use img/shape-distribution.png>
 Package pdftex.def Info: img/shape-distribution.png  used on input line 159.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/margin-distribution.png, id=56, 520.94624pt x 371.3875pt>
+<img/margin-distribution.png, id=71, 520.94624pt x 371.3875pt>
 File: img/margin-distribution.png Graphic file (type png)
 <use img/margin-distribution.png>
 Package pdftex.def Info: img/margin-distribution.png  used on input line 163.
@@ -452,160 +452,171 @@ We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
 [2 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/birads-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/age-distribution.png>]
-<img/density-distribution.png, id=65, 520.94624pt x 371.3875pt>
+<img/density-distribution.png, id=80, 520.94624pt x 371.3875pt>
 File: img/density-distribution.png Graphic file (type png)
 <use img/density-distribution.png>
 Package pdftex.def Info: img/density-distribution.png  used on input line 174.
 (pdftex.def)             Requested size: 182.33391pt x 129.98756pt.
-<img/severity-distribution.png, id=66, 526.96875pt x 371.3875pt>
+<img/severity-distribution.png, id=81, 526.96875pt x 371.3875pt>
 File: img/severity-distribution.png Graphic file (type png)
 <use img/severity-distribution.png>
 Package pdftex.def Info: img/severity-distribution.png  used on input line 178.
 (pdftex.def)             Requested size: 184.44182pt x 129.98756pt.
-<img/shape-refill.png, id=67, 968.61874pt x 443.6575pt>
+<img/shape-refill.png, id=82, 968.61874pt x 443.6575pt>
 File: img/shape-refill.png Graphic file (type png)
 <use img/shape-refill.png>
 Package pdftex.def Info: img/shape-refill.png  used on input line 191.
 (pdftex.def)             Requested size: 339.02164pt x 155.28244pt.
  [3 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/shape-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/margin-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/density-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/severity-distribution.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/shape-refill.png>]
-<img/age-refill.png, id=78, 972.63374pt x 443.6575pt>
+<img/age-refill.png, id=93, 972.63374pt x 443.6575pt>
 File: img/age-refill.png Graphic file (type png)
 <use img/age-refill.png>
 Package pdftex.def Info: img/age-refill.png  used on input line 206.
 (pdftex.def)             Requested size: 340.42691pt x 155.28244pt.
-<img/density-refill.png, id=79, 968.61874pt x 443.6575pt>
+<img/density-refill.png, id=94, 968.61874pt x 443.6575pt>
 File: img/density-refill.png Graphic file (type png)
 <use img/density-refill.png>
 Package pdftex.def Info: img/density-refill.png  used on input line 214.
 (pdftex.def)             Requested size: 339.02164pt x 155.28244pt.
  [4 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/age-refill.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/density-refill.png>]
-<img/birads-refill.png, id=86, 968.61874pt x 443.6575pt>
+<img/birads-refill.png, id=101, 968.61874pt x 443.6575pt>
 File: img/birads-refill.png Graphic file (type png)
 <use img/birads-refill.png>
 Package pdftex.def Info: img/birads-refill.png  used on input line 225.
 (pdftex.def)             Requested size: 339.02164pt x 155.28244pt.
-<img/margin-refill.png, id=87, 968.61874pt x 443.6575pt>
+<img/margin-refill.png, id=102, 968.61874pt x 443.6575pt>
 File: img/margin-refill.png Graphic file (type png)
 <use img/margin-refill.png>
 Package pdftex.def Info: img/margin-refill.png  used on input line 230.
 (pdftex.def)             Requested size: 339.02164pt x 155.28244pt.
  [5 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/birads-refill.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/margin-refill.png>]
-<img/curva-roc.png, id=94, 515.9275pt x 351.3125pt>
+<img/curva-roc.png, id=109, 515.9275pt x 351.3125pt>
 File: img/curva-roc.png Graphic file (type png)
 <use img/curva-roc.png>
 Package pdftex.def Info: img/curva-roc.png  used on input line 245.
 (pdftex.def)             Requested size: 257.96312pt x 175.6558pt.
-<img/severity-count.png, id=95, 520.94624pt x 351.3125pt>
+<img/severity-count.png, id=110, 520.94624pt x 351.3125pt>
 File: img/severity-count.png Graphic file (type png)
 <use img/severity-count.png>
 Package pdftex.def Info: img/severity-count.png  used on input line 260.
 (pdftex.def)             Requested size: 260.47249pt x 175.6558pt.
  [6 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/curva-roc.png>]
-<img/scatter-age-margin.png, id=103, 511.9125pt x 351.3125pt>
+<img/scatter-age-margin.png, id=118, 511.9125pt x 351.3125pt>
 File: img/scatter-age-margin.png Graphic file (type png)
 <use img/scatter-age-margin.png>
 Package pdftex.def Info: img/scatter-age-margin.png  used on input line 274.
 (pdftex.def)             Requested size: 255.95563pt x 175.6558pt.
  [7 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/severity-count.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/scatter-age-margin.png>]
-<img/boxplot-age-margin.png, id=110, 960.58875pt x 423.5825pt>
+<img/boxplot-age-margin.png, id=125, 960.58875pt x 423.5825pt>
 File: img/boxplot-age-margin.png Graphic file (type png)
 <use img/boxplot-age-margin.png>
 Package pdftex.def Info: img/boxplot-age-margin.png  used on input line 290.
 (pdftex.def)             Requested size: 384.22868pt x 169.43pt.
  [8 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/boxplot-age-margin.png>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 310.
+<img/pairplot.png, id=131, 1423.3175pt x 1421.31pt>
+File: img/pairplot.png Graphic file (type png)
+<use img/pairplot.png>
+Package pdftex.def Info: img/pairplot.png  used on input line 312.
+(pdftex.def)             Requested size: 355.8285pt x 355.32663pt.
+ [9 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/pairplot.png>]
+<img/pairplot-hue.png, id=137, 1262.7175pt x 1185.42876pt>
+File: img/pairplot-hue.png Graphic file (type png)
+<use img/pairplot-hue.png>
+Package pdftex.def Info: img/pairplot-hue.png  used on input line 324.
+(pdftex.def)             Requested size: 378.81818pt x 355.63136pt.
+ [10 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/pairplot-hue.png>] [11]
+<img/dbscan.png, id=147, 463.7325pt x 418.56375pt>
+File: img/dbscan.png Graphic file (type png)
+<use img/dbscan.png>
+Package pdftex.def Info: img/dbscan.png  used on input line 377.
+(pdftex.def)             Requested size: 208.67769pt x 188.35193pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.394 \end{itemize}
+                    <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/dbscan.png>] [13]
+<img/cluster-distribution-and.png, id=158, 528.97626pt x 332.24126pt>
+File: img/cluster-distribution-and.png Graphic file (type png)
+<use img/cluster-distribution-and.png>
+Package pdftex.def Info: img/cluster-distribution-and.png  used on input line 466.
+(pdftex.def)             Requested size: 211.58675pt x 132.89413pt.
+ [14 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/cluster-distribution-and.png>]
+<img/centroides-and.png, id=164, 531.9875pt x 375.4025pt>
+File: img/centroides-and.png Graphic file (type png)
+<use img/centroides-and.png>
+Package pdftex.def Info: img/centroides-and.png  used on input line 475.
+(pdftex.def)             Requested size: 265.9931pt x 187.70079pt.
+<img/pairplot-and.png, id=165, 1253.68375pt x 1184.425pt>
+File: img/pairplot-and.png Graphic file (type png)
+<use img/pairplot-and.png>
+Package pdftex.def Info: img/pairplot-and.png  used on input line 495.
+(pdftex.def)             Requested size: 376.10803pt x 355.33025pt.
+ [15 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/centroides-and.png>] [16 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/pairplot-and.png>] [17] [18]
+<img/cluster-distribution-gal.png, id=186, 528.97626pt x 332.24126pt>
+File: img/cluster-distribution-gal.png Graphic file (type png)
+<use img/cluster-distribution-gal.png>
+Package pdftex.def Info: img/cluster-distribution-gal.png  used on input line 598.
+(pdftex.def)             Requested size: 211.58675pt x 132.89413pt.
+<img/centroides-gal.png, id=187, 531.9875pt x 375.4025pt>
+File: img/centroides-gal.png Graphic file (type png)
+<use img/centroides-gal.png>
+Package pdftex.def Info: img/centroides-gal.png  used on input line 603.
+(pdftex.def)             Requested size: 265.9931pt x 187.70079pt.
+<img/pairplot-gal.png, id=188, 1253.68375pt x 1184.425pt>
+File: img/pairplot-gal.png Graphic file (type png)
+<use img/pairplot-gal.png>
+Package pdftex.def Info: img/pairplot-gal.png  used on input line 618.
+(pdftex.def)             Requested size: 376.10803pt x 355.33025pt.
+ [19 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/cluster-distribution-gal.png> <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/centroides-gal.png>] [20 <c:/Users/Jose/Universidad/IN (Inteligencia de Negocio)/IN_Practicas/Practica2/doc/img/pairplot-gal.png>] [21]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 679.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . svm . SVC .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
-\T1/cmtt/m/n/10.95 ensemble . RandomForestClassifier . html # sklearn . ensemble .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . neural _
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 321--323
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--327
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / auto _ examples / model _ selection /
- []
-
-
-Overfull \hbox (112.6471pt too wide) in paragraph at lines 329--331
-\T1/cmtt/m/n/10.95 plot _ learning _ curve . html # sphx-[]glr-[]auto-[]examples-[]model-[]selection-[]plot-[]learning-[]curve-[]py$[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--335
+Underfull \hbox (badness 10000) in paragraph at lines 686--688
 []$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . metrics .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--339
+Underfull \hbox (badness 10000) in paragraph at lines 690--692
 []$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . metrics .
  []
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 361--363
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . model _
+
+Overfull \hbox (65.38013pt too wide) in paragraph at lines 702--704
+[]$\T1/cmtt/m/n/10.95 https : / / www . pantechsolutions . net / road-[]accident-[]analysis-[]using-[]machine-[]learning$[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--367
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn . model _
+Underfull \hbox (badness 10000) in paragraph at lines 706--708
+[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / modules / generated / sklearn .
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--371
-[]$\T1/cmtt/m/n/10.95 https : / / scikit-[]learn . org / stable / auto _ examples / model _ selection /
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 376.
-[10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 376.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 717.
+[22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 717.
  ("c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica2\doc\memoria.aux"
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 376.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 376.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 717.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 717.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
-(rerunfilecheck)             Checksum: F4CD79D45AD41A546978E40A55552922;383.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 376.
+(rerunfilecheck)             Checksum: 9DD754FA0282590DF8F3E3154E4CA256;602.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 717.
  ) 
 Here is how much of TeX's memory you used:
- 9260 strings out of 492895
- 134177 string characters out of 3133482
- 437746 words of memory out of 3000000
- 13012 multiletter control sequences out of 15000+200000
- 14720 words of font info for 37 fonts, out of 3000000 for 9000
+ 9321 strings out of 492895
+ 135336 string characters out of 3133482
+ 435746 words of memory out of 3000000
+ 13051 multiletter control sequences out of 15000+200000
+ 16250 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,340b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,43p,340b,463s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc2488.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\Jose\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on "c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica2\doc\memoria.pdf" (11 pages, 426700 bytes).
+Output written on "c:/Users\Jose\Universidad\IN (Inteligencia de Negocio)\IN_Practicas\Practica2\doc\memoria.pdf" (23 pages, 1610270 bytes).
 PDF statistics:
- 532 PDF objects out of 1000 (max. 8388607)
- 35 named destinations out of 1000 (max. 500000)
- 134 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

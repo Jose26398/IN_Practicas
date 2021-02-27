@@ -1,8 +1,0 @@
-\babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{2}{section.1}% 
-\contentsline {section}{\numberline {2}Estrategias y progreso obtenido}{2}{section.2}% 
-\contentsline {subsection}{\numberline {2.1}Primeros pasos}{2}{subsection.2.1}% 
-\contentsline {subsection}{\numberline {2.2}Intentando mejorar los modelos}{6}{subsection.2.2}% 
-\contentsline {subsection}{\numberline {2.3}Cambiando el planteamiento}{7}{subsection.2.3}% 
-\contentsline {section}{\numberline {3}Tabla de soluciones}{11}{section.3}% 
-\contentsline {section}{Referencias}{12}{section*.10}% 
